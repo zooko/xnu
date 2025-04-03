@@ -16553,7 +16553,7 @@ vm_map_reusable_pages(
 	}
 
 	/*
-	 * The MADV_REUSABLE operation doesn't require any changes to the
+	 * The MADV_FREE_REUSABLE operation doesn't require any changes to the
 	 * vm_map_entry_t's, so the read lock is sufficient.
 	 */
 
@@ -16708,7 +16708,7 @@ vm_map_can_reuse(
 	vm_map_entry_t                  entry;
 
 	/*
-	 * The MADV_REUSABLE operation doesn't require any changes to the
+	 * The MADV_CAN_REUSE operation doesn't require any changes to the
 	 * vm_map_entry_t's, so the read lock is sufficient.
 	 */
 
